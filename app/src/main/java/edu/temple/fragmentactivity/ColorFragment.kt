@@ -37,7 +37,7 @@ class ColorFragment : Fragment() {
                         id: Long
                     ) {
                         parent?.run {
-                            view?.setBackgroundColor(Color.parseColor(getItemAtPosition(position).toString()))
+                            this@ColorFragment.view?.setBackgroundColor(Color.parseColor(getItemAtPosition(position).toString()))
                         }
                     }
 
